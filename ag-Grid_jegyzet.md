@@ -45,3 +45,22 @@ enableSorting: true,
 
 * Accented sort:
     * _gridOptions.accentedSort = true_
+
+
+### Filters
+
+```js
+gridOptions = {
+    // turn on filtering
+    enableFilter: true,
+    ...
+    columnDefs: [
+        {headerName: "Athlete", field: "athlete", filter: "text"}, // text filter
+        {headerName: "Age",     field: "age",     filter: "number"}, // number filter
+        {headerName: "Sport",   field: "sport",   suppressFilter: true} // NO filter
+    ]
+}
+```
+
+__...__
+
